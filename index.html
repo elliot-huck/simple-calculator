@@ -8,20 +8,27 @@
   <title>Document</title>
 </head>
 <body>
-  <form>
-    <!-- Number 1: -->
-    <input type="text" id="num1">
-    <div class="button-container">
-      <button type="button" id="addButton">+</button>
-      <button type="button" id="subtractButton">&ndash;</button>
-      <button type="button" id="multiplyButton">x</button>
-      <button type="button" id="divideButton">&#247;</button>
-    </div>
-    <!-- Number 2: -->
-    <input type="text" id="num2">
-    <h4 id="output"></h4>
-  </form>
+  <div class="container">
+    <form>
+      <!-- Number 1: -->
+      <input type="text" id="num1">
+      <!--All the buttons-->
+      <div class="container">
+        <button type="button" id="addButton">+</button>
+        <button type="button" id="subtractButton">&ndash;</button>
+        <button type="button" id="multiplyButton">x</button>
+        <button type="button" id="divideButton">&#247;</button>
+      </div>
+      <!-- Number 2: -->
+      <input type="text" id="num2">
+    </form>
 
+    <!-- this is where the results go -->
+    <div id="output">
+      <h4></h4>
+      <!--This empty h4 element is so I can insertBefore output.firstElementChild-->
+    </div>
+  </div>
   <script src="main.js"></script>
 </body>
 </html>

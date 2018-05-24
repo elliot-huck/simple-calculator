@@ -37,7 +37,13 @@ button {
   text-align: center;
   background-color: dimgray;
   color: lightskyblue;
-  border: 1px solid darkslateblue;
+  border: 3px outset gray;
+}
+
+button:active {
+  /* background-color: darkgray; */
+  /* color: lightblue; */
+  border: 3px inset gray;
 }
 
 input {
